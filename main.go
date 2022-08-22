@@ -32,7 +32,7 @@ func serveReverseProxy(target string, res http.ResponseWriter, req *http.Request
 }
 
 func handleRequestAndRedirect(res http.ResponseWriter, req *http.Request) {
-	log.Printf("%s proxy_url: %s/%s\n", req.Method, reverseUrl, req.URL)
+	log.Printf("%s proxy_url: %s%s\n", req.Method, reverseUrl, req.URL)
 	if printRequest {
 		fmt.Println(req)
 	}
