@@ -10,9 +10,9 @@ usage: reverse-proxy <url> <port> <print request>
 ```
 examples
 ```
-reverse-proxy http://foxq-staging-api.cdex.club 1338 true
-reverse-proxy http://foxq-staging-api.cdex.club 4000 false
-reverse-proxy http://foxq-staging-api.cdex.club
+reverse-proxy http://api.example.com 1338 true
+reverse-proxy http://api.example.com 4000 false
+reverse-proxy http://api.example.com
 ```
 ### Build
 if you wish to change the source code, building process is a simple golang command
